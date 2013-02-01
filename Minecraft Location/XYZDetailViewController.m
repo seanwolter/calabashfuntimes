@@ -35,6 +35,7 @@
     if (self.detailItem) {
         MCPlayer *player = self.detailItem;
         self.titleLabel.text =player.name;
+        self.title = player.name;
         self.locationLabel.text = [player.lastLocation locationString];
         [self loadAvatarImage];
     }
@@ -57,6 +58,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Player Details";
     [self configureView];
 }
 

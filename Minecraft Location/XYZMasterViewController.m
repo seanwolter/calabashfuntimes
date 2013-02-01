@@ -19,6 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Players";
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         NSURL *url = [NSURL URLWithString:@"http://vokal-mapserve.jit.su/players"];
         NSData *data = [NSData dataWithContentsOfURL:url];

@@ -1,332 +1,1097 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		3D0A843B16B9841500990195 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0A843A16B9841500990195 /* UIKit.framework */; };
-		3D0A843D16B9841500990195 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0A843C16B9841500990195 /* Foundation.framework */; };
-		3D0A843F16B9841500990195 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0A843E16B9841500990195 /* CoreGraphics.framework */; };
-		3D0A844516B9841500990195 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A844316B9841500990195 /* InfoPlist.strings */; };
-		3D0A844716B9841500990195 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A844616B9841500990195 /* main.m */; };
-		3D0A844B16B9841500990195 /* XYZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A844A16B9841500990195 /* XYZAppDelegate.m */; };
-		3D0A844D16B9841500990195 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A844C16B9841500990195 /* Default.png */; };
-		3D0A844F16B9841500990195 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A844E16B9841500990195 /* Default@2x.png */; };
-		3D0A845116B9841500990195 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A845016B9841500990195 /* Default-568h@2x.png */; };
-		3D0A845416B9841500990195 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A845216B9841500990195 /* MainStoryboard.storyboard */; };
-		3D0A845716B9841500990195 /* XYZMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A845616B9841500990195 /* XYZMasterViewController.m */; };
-		3D0A845A16B9841500990195 /* XYZDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A845916B9841500990195 /* XYZDetailViewController.m */; };
-		3D0A846916B98D4300990195 /* MCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A846816B98D4300990195 /* MCPlayer.m */; };
-		3D0A846C16B98D5600990195 /* MCLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A846B16B98D5600990195 /* MCLocation.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
-		3D0A843716B9841500990195 /* Minecraft Location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Minecraft Location.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D0A843A16B9841500990195 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		3D0A843C16B9841500990195 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3D0A843E16B9841500990195 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		3D0A844216B9841500990195 /* Minecraft Location-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Minecraft Location-Info.plist"; sourceTree = "<group>"; };
-		3D0A844416B9841500990195 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3D0A844616B9841500990195 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3D0A844816B9841500990195 /* Minecraft Location-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Minecraft Location-Prefix.pch"; sourceTree = "<group>"; };
-		3D0A844916B9841500990195 /* XYZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZAppDelegate.h; sourceTree = "<group>"; };
-		3D0A844A16B9841500990195 /* XYZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZAppDelegate.m; sourceTree = "<group>"; };
-		3D0A844C16B9841500990195 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		3D0A844E16B9841500990195 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		3D0A845016B9841500990195 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		3D0A845316B9841500990195 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		3D0A845516B9841500990195 /* XYZMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZMasterViewController.h; sourceTree = "<group>"; };
-		3D0A845616B9841500990195 /* XYZMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZMasterViewController.m; sourceTree = "<group>"; };
-		3D0A845816B9841500990195 /* XYZDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZDetailViewController.h; sourceTree = "<group>"; };
-		3D0A845916B9841500990195 /* XYZDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZDetailViewController.m; sourceTree = "<group>"; };
-		3D0A846716B98D4300990195 /* MCPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPlayer.h; sourceTree = "<group>"; };
-		3D0A846816B98D4300990195 /* MCPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPlayer.m; sourceTree = "<group>"; };
-		3D0A846A16B98D5600990195 /* MCLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCLocation.h; sourceTree = "<group>"; };
-		3D0A846B16B98D5600990195 /* MCLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLocation.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		3D0A843416B9841500990195 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D0A843B16B9841500990195 /* UIKit.framework in Frameworks */,
-				3D0A843D16B9841500990195 /* Foundation.framework in Frameworks */,
-				3D0A843F16B9841500990195 /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		3D0A842E16B9841500990195 = {
-			isa = PBXGroup;
-			children = (
-				3D0A844016B9841500990195 /* Minecraft Location */,
-				3D0A843916B9841500990195 /* Frameworks */,
-				3D0A843816B9841500990195 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		3D0A843816B9841500990195 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3D0A843716B9841500990195 /* Minecraft Location.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3D0A843916B9841500990195 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3D0A843A16B9841500990195 /* UIKit.framework */,
-				3D0A843C16B9841500990195 /* Foundation.framework */,
-				3D0A843E16B9841500990195 /* CoreGraphics.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3D0A844016B9841500990195 /* Minecraft Location */ = {
-			isa = PBXGroup;
-			children = (
-				3D0A846616B988E600990195 /* Models */,
-				3D0A844916B9841500990195 /* XYZAppDelegate.h */,
-				3D0A844A16B9841500990195 /* XYZAppDelegate.m */,
-				3D0A845216B9841500990195 /* MainStoryboard.storyboard */,
-				3D0A845516B9841500990195 /* XYZMasterViewController.h */,
-				3D0A845616B9841500990195 /* XYZMasterViewController.m */,
-				3D0A845816B9841500990195 /* XYZDetailViewController.h */,
-				3D0A845916B9841500990195 /* XYZDetailViewController.m */,
-				3D0A844116B9841500990195 /* Supporting Files */,
-			);
-			path = "Minecraft Location";
-			sourceTree = "<group>";
-		};
-		3D0A844116B9841500990195 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3D0A844216B9841500990195 /* Minecraft Location-Info.plist */,
-				3D0A844316B9841500990195 /* InfoPlist.strings */,
-				3D0A844616B9841500990195 /* main.m */,
-				3D0A844816B9841500990195 /* Minecraft Location-Prefix.pch */,
-				3D0A844C16B9841500990195 /* Default.png */,
-				3D0A844E16B9841500990195 /* Default@2x.png */,
-				3D0A845016B9841500990195 /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3D0A846616B988E600990195 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				3D0A846716B98D4300990195 /* MCPlayer.h */,
-				3D0A846816B98D4300990195 /* MCPlayer.m */,
-				3D0A846A16B98D5600990195 /* MCLocation.h */,
-				3D0A846B16B98D5600990195 /* MCLocation.m */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		3D0A843616B9841500990195 /* Minecraft Location */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3D0A845D16B9841500990195 /* Build configuration list for PBXNativeTarget "Minecraft Location" */;
-			buildPhases = (
-				3D0A843316B9841500990195 /* Sources */,
-				3D0A843416B9841500990195 /* Frameworks */,
-				3D0A843516B9841500990195 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Minecraft Location";
-			productName = "Minecraft Location";
-			productReference = 3D0A843716B9841500990195 /* Minecraft Location.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		3D0A842F16B9841500990195 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = XYZ;
-				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = VOKAL;
-			};
-			buildConfigurationList = 3D0A843216B9841500990195 /* Build configuration list for PBXProject "Minecraft Location" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 3D0A842E16B9841500990195;
-			productRefGroup = 3D0A843816B9841500990195 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				3D0A843616B9841500990195 /* Minecraft Location */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		3D0A843516B9841500990195 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D0A844516B9841500990195 /* InfoPlist.strings in Resources */,
-				3D0A844D16B9841500990195 /* Default.png in Resources */,
-				3D0A844F16B9841500990195 /* Default@2x.png in Resources */,
-				3D0A845116B9841500990195 /* Default-568h@2x.png in Resources */,
-				3D0A845416B9841500990195 /* MainStoryboard.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		3D0A843316B9841500990195 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D0A844716B9841500990195 /* main.m in Sources */,
-				3D0A844B16B9841500990195 /* XYZAppDelegate.m in Sources */,
-				3D0A845716B9841500990195 /* XYZMasterViewController.m in Sources */,
-				3D0A845A16B9841500990195 /* XYZDetailViewController.m in Sources */,
-				3D0A846916B98D4300990195 /* MCPlayer.m in Sources */,
-				3D0A846C16B98D5600990195 /* MCLocation.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		3D0A844316B9841500990195 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3D0A844416B9841500990195 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		3D0A845216B9841500990195 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3D0A845316B9841500990195 /* en */,
-			);
-			name = MainStoryboard.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		3D0A845B16B9841500990195 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		3D0A845C16B9841500990195 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		3D0A845E16B9841500990195 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Minecraft Location/Minecraft Location-Prefix.pch";
-				INFOPLIST_FILE = "Minecraft Location/Minecraft Location-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		3D0A845F16B9841500990195 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Minecraft Location/Minecraft Location-Prefix.pch";
-				INFOPLIST_FILE = "Minecraft Location/Minecraft Location-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		3D0A843216B9841500990195 /* Build configuration list for PBXProject "Minecraft Location" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3D0A845B16B9841500990195 /* Debug */,
-				3D0A845C16B9841500990195 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3D0A845D16B9841500990195 /* Build configuration list for PBXNativeTarget "Minecraft Location" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3D0A845E16B9841500990195 /* Debug */,
-				3D0A845F16B9841500990195 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 3D0A842F16B9841500990195 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>060bc0616f7949524aeea2c8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>a659ee12f6678d8ada713de3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>06f089193674e9b4bcc8cc79</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A844A16B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0bf657098e55aef7e575529d</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>"$(SRCROOT)"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Minecraft Location/Minecraft Location-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Minecraft Location/Minecraft Location-Info.plist</string>
+				<key>OTHER_LDFLAGS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>-force_load</string>
+					<string>"$(SRCROOT)/calabash.framework/calabash"</string>
+					<string>-lstdc++</string>
+				</array>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>1cf9bb0328c6faef17c0bddf</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A843A16B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2c8bf4483778a2cbf0e3cb55</key>
+		<dict>
+			<key>fileRef</key>
+			<string>adf2ec40ec52074bf1d6ab47</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3D0A842E16B9841500990195</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3D0A844016B9841500990195</string>
+				<string>3D0A843916B9841500990195</string>
+				<string>3D0A843816B9841500990195</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A842F16B9841500990195</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>XYZ</string>
+				<key>LastUpgradeCheck</key>
+				<string>0460</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>VOKAL</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>3D0A843216B9841500990195</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>3D0A842E16B9841500990195</string>
+			<key>productRefGroup</key>
+			<string>3D0A843816B9841500990195</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>3D0A843616B9841500990195</string>
+				<string>ede85c1c2206ecbfc66e87bf</string>
+			</array>
+		</dict>
+		<key>3D0A843216B9841500990195</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>3D0A845B16B9841500990195</string>
+				<string>3D0A845C16B9841500990195</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>3D0A843316B9841500990195</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3D0A844716B9841500990195</string>
+				<string>3D0A844B16B9841500990195</string>
+				<string>3D0A845716B9841500990195</string>
+				<string>3D0A845A16B9841500990195</string>
+				<string>3D0A846916B98D4300990195</string>
+				<string>3D0A846C16B98D5600990195</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3D0A843416B9841500990195</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3D0A843B16B9841500990195</string>
+				<string>3D0A843D16B9841500990195</string>
+				<string>3D0A843F16B9841500990195</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3D0A843516B9841500990195</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3D0A844516B9841500990195</string>
+				<string>3D0A844D16B9841500990195</string>
+				<string>3D0A844F16B9841500990195</string>
+				<string>3D0A845116B9841500990195</string>
+				<string>3D0A845416B9841500990195</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3D0A843616B9841500990195</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>3D0A845D16B9841500990195</string>
+			<key>buildPhases</key>
+			<array>
+				<string>3D0A843316B9841500990195</string>
+				<string>3D0A843416B9841500990195</string>
+				<string>3D0A843516B9841500990195</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Minecraft Location</string>
+			<key>productName</key>
+			<string>Minecraft Location</string>
+			<key>productReference</key>
+			<string>3D0A843716B9841500990195</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>3D0A843716B9841500990195</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Minecraft Location.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>3D0A843816B9841500990195</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3D0A843716B9841500990195</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A843916B9841500990195</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3D0A843A16B9841500990195</string>
+				<string>3D0A843C16B9841500990195</string>
+				<string>3D0A843E16B9841500990195</string>
+				<string>a659ee12f6678d8ada713de3</string>
+				<string>adf2ec40ec52074bf1d6ab47</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>path</key>
+			<string></string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A843A16B9841500990195</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>3D0A843B16B9841500990195</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A843A16B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3D0A843C16B9841500990195</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>3D0A843D16B9841500990195</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A843C16B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3D0A843E16B9841500990195</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>3D0A843F16B9841500990195</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A843E16B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3D0A844016B9841500990195</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3D0A846616B988E600990195</string>
+				<string>3D0A844916B9841500990195</string>
+				<string>3D0A844A16B9841500990195</string>
+				<string>3D0A845216B9841500990195</string>
+				<string>3D0A845516B9841500990195</string>
+				<string>3D0A845616B9841500990195</string>
+				<string>3D0A845816B9841500990195</string>
+				<string>3D0A845916B9841500990195</string>
+				<string>3D0A844116B9841500990195</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Minecraft Location</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A844116B9841500990195</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3D0A844216B9841500990195</string>
+				<string>3D0A844316B9841500990195</string>
+				<string>3D0A844616B9841500990195</string>
+				<string>3D0A844816B9841500990195</string>
+				<string>3D0A844C16B9841500990195</string>
+				<string>3D0A844E16B9841500990195</string>
+				<string>3D0A845016B9841500990195</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A844216B9841500990195</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Minecraft Location-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A844316B9841500990195</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3D0A844416B9841500990195</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A844416B9841500990195</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A844516B9841500990195</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A844316B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3D0A844616B9841500990195</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A844716B9841500990195</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A844616B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3D0A844816B9841500990195</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Minecraft Location-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A844916B9841500990195</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>XYZAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A844A16B9841500990195</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>XYZAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A844B16B9841500990195</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A844A16B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3D0A844C16B9841500990195</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A844D16B9841500990195</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A844C16B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3D0A844E16B9841500990195</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A844F16B9841500990195</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A844E16B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3D0A845016B9841500990195</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default-568h@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A845116B9841500990195</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A845016B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3D0A845216B9841500990195</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3D0A845316B9841500990195</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>MainStoryboard.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A845316B9841500990195</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/MainStoryboard.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A845416B9841500990195</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A845216B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3D0A845516B9841500990195</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>XYZMasterViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A845616B9841500990195</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>XYZMasterViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A845716B9841500990195</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A845616B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3D0A845816B9841500990195</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>XYZDetailViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A845916B9841500990195</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>XYZDetailViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A845A16B9841500990195</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A845916B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3D0A845B16B9841500990195</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>3D0A845C16B9841500990195</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.1</string>
+				<key>OTHER_CFLAGS</key>
+				<string>-DNS_BLOCK_ASSERTIONS=1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>3D0A845D16B9841500990195</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>3D0A845E16B9841500990195</string>
+				<string>3D0A845F16B9841500990195</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>3D0A845E16B9841500990195</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Minecraft Location/Minecraft Location-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Minecraft Location/Minecraft Location-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>3D0A845F16B9841500990195</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Minecraft Location/Minecraft Location-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Minecraft Location/Minecraft Location-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>3D0A846616B988E600990195</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3D0A846716B98D4300990195</string>
+				<string>3D0A846816B98D4300990195</string>
+				<string>3D0A846A16B98D5600990195</string>
+				<string>3D0A846B16B98D5600990195</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Models</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A846716B98D4300990195</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MCPlayer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A846816B98D4300990195</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MCPlayer.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A846916B98D4300990195</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A846816B98D4300990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3D0A846A16B98D5600990195</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MCLocation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A846B16B98D5600990195</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MCLocation.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D0A846C16B98D5600990195</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A846B16B98D5600990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4383ed7c8abf4176b701e920</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A845216B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4e38bc9c2880af1bff22abde</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>93aa14a32050bcc203dea8a9</string>
+				<string>06f089193674e9b4bcc8cc79</string>
+				<string>d33404df250cabfb80f1f79f</string>
+				<string>7775bf65880a9668dcb5b9a0</string>
+				<string>b9b28564ba9c39f6c8590744</string>
+				<string>e75499ece178ac6a56c2e621</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5cf83b54708f1376e7f508d7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1cf9bb0328c6faef17c0bddf</string>
+				<string>9eb307eceb62d82c18e23375</string>
+				<string>62336b1d797d1c0c13847df0</string>
+				<string>060bc0616f7949524aeea2c8</string>
+				<string>2c8bf4483778a2cbf0e3cb55</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>616e337c68fb2932c5dc74d5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A845016B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6203cd54b2389e6e98fb1899</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>"$(SRCROOT)"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Minecraft Location/Minecraft Location-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Minecraft Location/Minecraft Location-Info.plist</string>
+				<key>OTHER_LDFLAGS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>-force_load</string>
+					<string>"$(SRCROOT)/calabash.framework/calabash"</string>
+					<string>-lstdc++</string>
+				</array>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>62336b1d797d1c0c13847df0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A843E16B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7775bf65880a9668dcb5b9a0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A845916B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7f7bd84085e6de86d8b929ac</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A844E16B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93aa14a32050bcc203dea8a9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A844616B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9e4fd58ade0ab679d424e93e</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A844C16B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9eb307eceb62d82c18e23375</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A843C16B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>a659ee12f6678d8ada713de3</key>
+		<dict>
+			<key>FileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CFNetwork.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CFNetwork.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>adf2ec40ec52074bf1d6ab47</key>
+		<dict>
+			<key>FileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>calabash.framework</string>
+			<key>path</key>
+			<string>calabash.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>b52377bcf92111b598234a1a</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Minecraft Location-cal.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>b9b28564ba9c39f6c8590744</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A846816B98D4300990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>bb2d5bc2406a40ac677bde8f</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>fad93ee95c5d4385c3d356d5</string>
+				<string>9e4fd58ade0ab679d424e93e</string>
+				<string>7f7bd84085e6de86d8b929ac</string>
+				<string>616e337c68fb2932c5dc74d5</string>
+				<string>4383ed7c8abf4176b701e920</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>d33404df250cabfb80f1f79f</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A845616B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>d757e0431bb88af6501e916e</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>0bf657098e55aef7e575529d</string>
+				<string>6203cd54b2389e6e98fb1899</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>e75499ece178ac6a56c2e621</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A846B16B98D5600990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ede85c1c2206ecbfc66e87bf</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>d757e0431bb88af6501e916e</string>
+			<key>buildPhases</key>
+			<array>
+				<string>4e38bc9c2880af1bff22abde</string>
+				<string>5cf83b54708f1376e7f508d7</string>
+				<string>bb2d5bc2406a40ac677bde8f</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Minecraft Location-cal</string>
+			<key>productName</key>
+			<string>Minecraft Location-cal</string>
+			<key>productReference</key>
+			<string>b52377bcf92111b598234a1a</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>fad93ee95c5d4385c3d356d5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D0A844316B9841500990195</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>3D0A842F16B9841500990195</string>
+</dict>
+</plist>
