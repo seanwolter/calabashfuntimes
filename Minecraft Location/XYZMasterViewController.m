@@ -49,6 +49,8 @@
     
     MCPlayer *playerCell = [self.playerArray objectAtIndex:indexPath.row];
     cell.textLabel.text = playerCell.name;
+    cell.textLabel.isAccessibilityElement = YES;
+    cell.textLabel.accessibilityLabel = playerCell.name;
     return cell;
 }
 
