@@ -19,6 +19,8 @@
 		3D0A845416B9841500990195 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A845216B9841500990195 /* MainStoryboard.storyboard */; };
 		3D0A845716B9841500990195 /* XYZMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A845616B9841500990195 /* XYZMasterViewController.m */; };
 		3D0A845A16B9841500990195 /* XYZDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A845916B9841500990195 /* XYZDetailViewController.m */; };
+		3D0A846916B98D4300990195 /* MCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A846816B98D4300990195 /* MCPlayer.m */; };
+		3D0A846C16B98D5600990195 /* MCLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A846B16B98D5600990195 /* MCLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,10 @@
 		3D0A845616B9841500990195 /* XYZMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZMasterViewController.m; sourceTree = "<group>"; };
 		3D0A845816B9841500990195 /* XYZDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZDetailViewController.h; sourceTree = "<group>"; };
 		3D0A845916B9841500990195 /* XYZDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZDetailViewController.m; sourceTree = "<group>"; };
+		3D0A846716B98D4300990195 /* MCPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPlayer.h; sourceTree = "<group>"; };
+		3D0A846816B98D4300990195 /* MCPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPlayer.m; sourceTree = "<group>"; };
+		3D0A846A16B98D5600990195 /* MCLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCLocation.h; sourceTree = "<group>"; };
+		3D0A846B16B98D5600990195 /* MCLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLocation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,7 @@
 		3D0A844016B9841500990195 /* Minecraft Location */ = {
 			isa = PBXGroup;
 			children = (
+				3D0A846616B988E600990195 /* Models */,
 				3D0A844916B9841500990195 /* XYZAppDelegate.h */,
 				3D0A844A16B9841500990195 /* XYZAppDelegate.m */,
 				3D0A845216B9841500990195 /* MainStoryboard.storyboard */,
@@ -110,6 +117,17 @@
 				3D0A845016B9841500990195 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D0A846616B988E600990195 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D0A846716B98D4300990195 /* MCPlayer.h */,
+				3D0A846816B98D4300990195 /* MCPlayer.m */,
+				3D0A846A16B98D5600990195 /* MCLocation.h */,
+				3D0A846B16B98D5600990195 /* MCLocation.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +201,8 @@
 				3D0A844B16B9841500990195 /* XYZAppDelegate.m in Sources */,
 				3D0A845716B9841500990195 /* XYZMasterViewController.m in Sources */,
 				3D0A845A16B9841500990195 /* XYZDetailViewController.m in Sources */,
+				3D0A846916B98D4300990195 /* MCPlayer.m in Sources */,
+				3D0A846C16B98D5600990195 /* MCLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

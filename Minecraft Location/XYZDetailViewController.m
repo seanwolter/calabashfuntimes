@@ -7,8 +7,13 @@
 //
 
 #import "XYZDetailViewController.h"
+#import "MCPlayer.h"
+#import "MCLocation.h"
 
 @interface XYZDetailViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *avatarImage;
+@property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 - (void)configureView;
 @end
 
@@ -28,11 +33,26 @@
 
 - (void)configureView
 {
-    // Update the user interface for the detail item.
-
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+        MCPlayer *player = self.detailItem;
+        self.titleLabel.text =player.name;
+        self.locationLabel.text = [player.lastLocation locationString];
+        [self loadAvatarImage];
     }
+}
+
+- (void)loadAvatarImage
+{
+    MCPlayer *player = self.detailItem;
+    NSString *urlString = [NSString stringWithFormat:@"http://minecraft.aggenkeech.com/body.php?u=%@&s=128&r=255&g=250&b=238",player.name];
+    NSURL *url = [NSURL URLWithString:urlString];
+
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        NSData *imageData = [NSData dataWithContentsOfURL:url];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.avatarImage.image = [UIImage imageWithData:imageData];
+        });
+    });
 }
 
 - (void)viewDidLoad
@@ -40,12 +60,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
