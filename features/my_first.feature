@@ -6,4 +6,4 @@ Feature:
         Given I am on the Player List
         When I view the details for player scottferg
         Then I should be navigated to the Player Details screen
-        And Should see the coordinates 123, 456, 789
+        And I should see the coordinates 123, 456, 789
