@@ -28,9 +28,9 @@
         _name = [params objectForKey:@"player"];
         _uuid = [params objectForKey:@"_id"];
         _lastLocation = [[MCLocation alloc]init];
-        _lastLocation.xlocation = @132; // [params objectForKey:@"x"];
-        _lastLocation.ylocation = @132; // [params objectForKey:@"y"];
-        _lastLocation.zlocation = @132; // [params objectForKey:@"z"];
+        _lastLocation.xlocation = @([[params objectForKey:@"x"] integerValue]);
+        _lastLocation.ylocation = @([[params objectForKey:@"y"] integerValue]);
+        _lastLocation.zlocation = @([[params objectForKey:@"z"] integerValue]);
     }
 
     return self;

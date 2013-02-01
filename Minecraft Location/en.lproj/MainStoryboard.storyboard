@@ -74,12 +74,12 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mlp-Tl-dDz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Mlp-Tl-dDz">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="210" id="BPW-Wj-G4Y"/>
+                                    <constraint firstAttribute="height" constant="200" id="Xqk-Ql-Hi5"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="210" type="user" id="YGC-tQ-fFj"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="300" type="user" id="btR-hD-wcd"/>
-                                    <constraint firstAttribute="height" constant="288" id="fng-EH-RqQ"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" type="user" id="btR-hD-wcd"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rb5-1R-AwJ">
