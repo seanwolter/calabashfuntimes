@@ -46,15 +46,14 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    
-    MCPlayer *playerCell = [self.playerArray objectAtIndex:indexPath.row];
-    cell.textLabel.text = playerCell.name;
+    MCPlayer *player = [self.playerArray objectAtIndex:indexPath.row ];
+    cell.textLabel.text = player.name;
+
     return cell;
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Return NO if you do not want the specified item to be editable.
     return NO;
 }
 
@@ -62,7 +61,7 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        [[segue destinationViewController] setDetailItem:[self.playerArray objectAtIndex:indexPath.row]];
+        [[segue destinationViewController] setDetailItem:[self.playerArray objectAtIndex:indexPath.row ]];
     }
 }
 
