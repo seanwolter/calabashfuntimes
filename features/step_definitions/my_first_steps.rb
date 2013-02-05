@@ -15,6 +15,11 @@ When "I view the details for player $name" do |player_name|
 	touch("view label text:'#{player_name}'")
 end
 
+When "I should see the name $name" do |player_name|
+	check_element_exists("view label text:'#{player_name}'")
+end
+
+
 Then "I should be navigated to the Player Details screen" do
 	check_element_exists("view marked:'player location'")
 end
